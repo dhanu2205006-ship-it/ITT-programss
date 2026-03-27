@@ -1,0 +1,9 @@
+from itertools import product
+import sys
+
+A = list(map(int, sys.stdin.readline().strip().split()))
+B = list(map(int, sys.stdin.readline().strip().split()))
+cartesian_product = list(product(A, B))
+for item in cartesian_product:
+    print(item, end=' ')
+print() # for a final newline
