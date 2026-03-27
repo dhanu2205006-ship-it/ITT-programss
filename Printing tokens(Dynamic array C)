@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+int main() 
+{
+    char sentence[1000];
+      if (fgets(sentence, sizeof(sentence), stdin) == NULL) {
+        return 1; // Exit if input fails
+    }
+    char *word = strtok(sentence, " \n");
+    while (word != NULL) {
+              printf("%s\n", word);
+           word = strtok(NULL, " \n");
+    }
+    return 0;
+}
