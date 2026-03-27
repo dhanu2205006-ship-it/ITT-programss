@@ -1,7 +1,6 @@
 #include <stdio.h>
-int find_nth_term(int n, int a, int b, int c) {
-    // Base cases: If n is one of the first three terms, return them directly
-    if (n == 1) {
+int find_nth_term(int n, int a, int b, int c)
+{
         return a;
     }
     if (n == 2) {
